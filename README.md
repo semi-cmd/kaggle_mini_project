@@ -9,6 +9,11 @@
 # 프로젝트 주제 : 머신러닝 기반 당뇨병 진단 예측 모델
 - 데이터를 기반으로 생활 습관, 건강 지표 확인용... (프로젝트 전체 요약, executive summary)
 
+### 🚀 핵심 성과 (Key Highlights)
+- **데이터 분석**: 9개 핵심 변수(Age, BMI, 혈압 등)를 기반으로 한 다각도 통계 검정 수행.
+- **최고 성능 달성**: XGBoost 모델 기반 **AUC-ROC 0.91**, **Recall 0.75** 기록 (상위 10% 수준).
+- **의사결정 지원**: SHAP 분석을 통해 개별 변수가 당뇨 발생 확률에 기여하는 '설명 가능한(XAI)' 인사이트 도출
+
 ## 1. project overview
 - **주제** : 생활 습관 또는 신체 상태를 활용한 당뇨병 유무 분류
 - **데이터셋** : [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/data)
