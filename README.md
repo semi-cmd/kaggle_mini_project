@@ -13,7 +13,7 @@
 - **주제** : 생활 습관 또는 신체 상태를 활용한 당뇨병 유무 분류
 - **데이터셋** : [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/data)
 
-- **핵심 목표** : `Diabetes Health Indicators Dataset`을 바탕으로 사용자의 생활습관 및 신체 상태 데이터를 분석하여 
+- **핵심 목표** : `Diabetes Health Indicators Dataset`을 바탕으로 사용자의 생활습관 및 신체 상태 데이터를 분석하여<br>
 설문 기반의 **당뇨병 고위험군 선별 예측 모델**을 구축하는 것을 목표
 
 ## 2. Data Dictionary (주요 핵심 변수)
