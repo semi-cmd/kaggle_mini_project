@@ -37,6 +37,42 @@
 - 혈당이 중요함 : 다른 알려진 요인(나이, BMI)보다 통계적으로 매우 훨씬, 강력하게, 유의미하게 영향이 있음을 확인 (via 회귀분석)
 ![Q-Q Plot](output/qqplot.png)
 
+## 6. 모델링 평가지표
+- 최종 모델은 XGBoost로 선정
+
+| Model | Accuracy | Recall | F1-Score | AUC-ROC |
+| :--- | :--- | :--- | :--- | :--- |
+| Random Forest | 0.85 | 0.70 | 0.74 | 0.88 |
+| **XGBoost** | **0.86** | **0.75** | **0.78** | **0.91** |
+
+> **Note** : 최종 대회 결과는 Public 0.70807 / Private 0.70807 (feat. 1등 점수).
+> **Note** : 최종 대회 결과는 Public 0.70807 / Private 0.70807 (상위 10%).
+
+## 7. Feature Importance (옵션)
+- SHAP 활용
+- 예측 모델에서 영향력이 가장 컸던 지표 순위
+1. Age
+2. BMI
+- 그림 추가
+
+## 8. Conclusion
+- 결론1
+- 결론2
+- 결론3
+
+# 보고서
+- 프로젝트 상세 보고서는 PDF 슬라이드 자료를 참고하여 주세요
+- 00 보고서 : [당뇨병 예측 모델링 : 통계분석 및 머신러닝 접근](report/프로젝트보고서.pdf)
+- 분석코드 : [분석코드](분석코드.ipynb)
+
+# 🔗 배지 및 이모지 공식 소스 링크
+| 용도 | 사이트 이름 | 링크 |
+| :--- | :--- | :--- |
+| **배지 생성** | Shields.io | [https://shields.io/](https://shields.io/) |
+| **로고/색상 검색** | Simple Icons | [https://simpleicons.org/](https://simpleicons.org/) |
+| **이모지 검색** | Emoji Cheat Sheet | [https://github.com/ikatyang/emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet) |
+
+
 
 | 변수명 | 설명 | 값의 의미 |
 | :--- | :--- | :--- |
@@ -53,10 +89,4 @@
 | Income | 소득 수준 | 1(최저) ~ 8(최고) |
 
 
-# 🔗 배지 및 이모지 공식 소스 링크
-| 용도 | 사이트 이름 | 링크 |
-| :--- | :--- | :--- |
-| **배지 생성** | Shields.io | [https://shields.io/](https://shields.io/) |
-| **로고/색상 검색** | Simple Icons | [https://simpleicons.org/](https://simpleicons.org/) |
-| **이모지 검색** | Emoji Cheat Sheet | [https://github.com/ikatyang/emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet) |
 
