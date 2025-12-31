@@ -5,6 +5,10 @@
   <img src="https://img.shields.io/badge/XGBoost-000000?style=for-the-badge&logo=XGBoost&logoColor=white">
 </div>
 
+
+# 프로젝트 주제 : 당뇨병 예측 모델링 : 통계분석 및 머신러닝 접근
+- 데이터를 기반으로 생활 습관, 건강 지표 확인용... (프로젝트 전체 요약, executive summary)
+
 # 🔗 배지 및 이모지 공식 소스 링크
 | 용도 | 사이트 이름 | 링크 |
 | :--- | :--- | :--- |
