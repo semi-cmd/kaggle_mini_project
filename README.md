@@ -6,19 +6,27 @@
   <img src="https://img.shields.io/badge/XGBoost-000000?style=for-the-badge&logo=XGBoost&logoColor=white">
 </div>
 
-
-# 프로젝트 주제 : 당뇨병 예측 모델링 : 통계분석 및 머신러닝 접근
+# 프로젝트 주제 : 머신러닝 기반 당뇨병 진단 예측 모델
 - 데이터를 기반으로 생활 습관, 건강 지표 확인용... (프로젝트 전체 요약, executive summary)
 
 ## 1. project overview
 - **주제** : 생활 습관 또는 신체 상태를 활용한 당뇨병 유무 분류
 - **데이터셋** : [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/data)
 
-- **핵심 목표** : 설문지를 활용해서 **당뇨병 고위험군을 선별할 수 있는 예측 모델** 구축
+- **핵심 목표** : **Diabetes Health Indicators Dataset을** 바탕으로 사용자의 생활습관 및 신체 상태 데이터를 분석하여 설문 기반의 **당뇨병 고위험군 선별 예측 모델**을 구축하는 것을 목표
 
 ## 2. Data Dictionary (주요 핵심 변수)
 - 실제 분석 결과 통해 확보한 변수들의 내용 기재
 - 총 변수갯수 : 31개 
+
+| 변수명 | 설명 | 값의 의미 |
+| :--- | :--- | :--- |
+| **Diabetes_binary** | 당뇨 여부 (**Target**) | 0: 음성, 1: 당뇨/전단계 |
+| **HighBP** | 고혈압 여부 | 0: 정상, 1: 고혈압 |
+| **BMI** | 체질량 지수 | 수치형 데이터 |
+| **GenHlth** | 주관적 건강 상태 | 1(매우 좋음) ~ 5(매우 나쁨) |
+| **Age** | 연령대 | 1(18-24) ~ 13(80세 이상) |
+
 
 ## 3. Problem Definition
 - **데이터 특성** : blah
