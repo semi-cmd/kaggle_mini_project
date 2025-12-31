@@ -19,14 +19,17 @@
 - 실제 분석 결과 통해 확보한 변수들의 내용 기재
 - 총 변수갯수 : 31개 
 
-| 변수명 | 설명 | 값의 의미 |
+| 변수명 | 설명 | 변수 유형 |
 | :--- | :--- | :--- |
-| **Diabetes_binary** | 당뇨 여부 (**Target**) | 0: 음성, 1: 당뇨/전단계 |
-| **HighBP** | 고혈압 여부 | 0: 정상, 1: 고혈압 |
-| **BMI** | 체질량 지수 | 수치형 데이터 |
-| **GenHlth** | 주관적 건강 상태 | 1(매우 좋음) ~ 5(매우 나쁨) |
-| **Age** | 연령대 | 1(18-24) ~ 13(80세 이상) |
-
+| **Age** | 연령대 | 수치형 (Ordinal) |
+| **Diet_score** | 식단 관리 점수 | 수치형 (Continuous) |
+| **Physical_activity** | 신체 활동량 | 수치형 (Continuous) |
+| **Bmi** | 체질량 지수 | 수치형 (Continuous) |
+| **Systolic_BP** | 수축기 혈압 | 수치형 (Continuous) |
+| **Triglycerides** | 중성지방 수치 | 수치형 (Continuous) |
+| **HDL_Cholesterol** | HDL 콜레스테롤 | 수치형 (Continuous) |
+| **Family_history** | 당뇨 가족력 유무 | 범주형 (Binary) |
+| **Hypertension_history** | 고혈압 과거력 | 범주형 (Binary) |
 
 ## 3. Problem Definition
 - **데이터 특성** : blah
