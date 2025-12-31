@@ -40,9 +40,10 @@
  **3.1 데이터 특성 및 분석 과제** <br>
     **비대칭적 클래스 분포**<br>
     - **현상** : 정상군 대비 당뇨 환자군(Target=1)의 비율이 현저히 낮은 불균형 구조를 보임<br>
-    - **대응** : 단순 정확도(Accuracy)를 배제, 환자를 놓치지 않는 **재현율(Recall)**과 변별력 측정하는 **AUC-ROC**를 핵심 평가지표로 설정<br>
-    <br>
-    **복합적 요인성**<br> 
+    - **대응** : 단순 정확도(Accuracy)를 배제, 환자를 놓치지 않는 **재현율(Recall)**
+    과 변별력 측정하는 **AUC-ROC**를 핵심 평가지표로 설정<br>
+    
+ **복합적 요인성**<br> 
     - **현상** : 당뇨병 유전적(`Family_history`), 생리학적 수치(`Bmi`, `Systolic_BP`,`Triglycerides`), 생활 환경(`Diet_score`, `Physical_activity`) 비선형적 결합되어 발생<br>
     - **대응** : 변수 간 단순 선형 관계를 넘어, 고차원 알고리즘 적용이 필수적<br>
 
@@ -56,10 +57,16 @@
     + 순서형 : ordinal encoder 처리(Age)
     + 일반 범주 : One-Hot Encoding 처리(Family_history, Hypertension_history)
 - **데이터 스케일링** : StandardScaler(표준화)
+    + 대상 : `Bmi`, `Systolic_BP`, `Triglycerides`, `HDL_Cholesterol`, `Diet_score`, `Physical_activity`
+    + 필요성 : 특히 **Triglycerides(중성지방)**과 **Systolic_BP(혈압)** 수치 단위가 커서 모델이 이를 과도하게 인식할 위험이 있음
 
 ## ✔️5. 통계분석 핵심 인사이트
 - 혈당이 중요함 : 다른 알려진 요인(나이, BMI)보다 통계적으로 매우 훨씬, 강력하게, 유의미하게 영향이 있음을 확인 (via 회귀분석)
 ![Q-Q Plot](output/correlation%20matrix.png)
+
+## ✔️5-1. 핵심 변수 비교 분석
+- **Triglycerides**가 타 변수 대비 압도적으로 높은 회귀 계수와 낮은  $p-value$($< 0.001$)를 기록함
+- **Triglycerides**와 **HDL_Cholesterol**의 조합이 **Bmi**나 **Systolic_BP**보다 모델의 분류 **성능(AUC)**향상에 더 크게 기여하는 것으로 나타남
 
 ## ✔️6. 모델링 평가지표
 - 최종 모델은 XGBoost로 선정
