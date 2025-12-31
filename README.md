@@ -13,7 +13,7 @@
 - **주제** : 생활 습관 또는 신체 상태를 활용한 당뇨병 유무 분류
 - **데이터셋** : [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/data)
 
-- **핵심 목표** : **Diabetes Health Indicators Dataset을** 바탕으로 사용자의 생활습관 및 신체 상태 데이터를 분석하여 설문 기반의 **당뇨병 고위험군 선별 예측 모델**을 구축하는 것을 목표
+- **핵심 목표** : `Diabetes Health Indicators Dataset`을 바탕으로 사용자의 생활습관 및 신체 상태 데이터를 분석하여 설문 기반의 **당뇨병 고위험군 선별 예측 모델**을 구축하는 것을 목표
 
 ## 2. Data Dictionary (주요 핵심 변수)
 - 실제 분석 결과 통해 확보한 변수들의 내용 기재
@@ -34,7 +34,7 @@
 ## 3. Problem Definition
 - **데이터 특성** 
     + 불균형한 클래스 분포 > 정상군에 비해 당뇨군(target) 의 비율이 낮아 단순 정확도 보다는 
-**AUC-ROC** + **Recall*을 핵심 평가지표로 설정
+**AUC-ROC** + **Recall**을 핵심 평가지표로 설정
     + 복합적 요인성 > 유전(`Family_history`), 생리 지표(`Bmi`, `Systolic_Bp`, `Triglycerides`), 생활 습관(`Diet_score`, `Physical_activity`)간의 복잡한 상호작용
 - 
 - **분석 방향**
