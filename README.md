@@ -38,10 +38,12 @@
 
 ## 3. Problem Definition
 - **데이터 특성** 
-    + 불균형한 클래스 분포 > 정상군에 비해 당뇨군(target) 의 비율이 낮아 단순 정확도 보다는 
-**AUC-ROC** + **Recall**을 핵심 평가지표로 설정
-    + 복합적 요인성 > 유전(`Family_history`), 생리 지표(`Bmi`, `Systolic_Bp`, `Triglycerides`), 생활 습관(`Diet_score`, `Physical_activity`)간의 복잡한 상호작용
-- 
+    + 비대칭적 클래스 분포 
+    - 현상 : 정상군 대비 당뇨 환자군(Target=1)의 비율이 현저히 낮은 불균형 구조를 보임
+    - 대응 : 모델이 다수 클래스에 편향되는 것을 방지하기 위해 단순 정확도(Accuracy)를 배제, 환자를 놓치지 않는 **재현율(Recall)**과 변별력 측정하는 **AUC-ROC**를 핵심 평가지표로 설정
+    + 복합적 요인성 
+    - 현상 : 당뇨병 유전적(`Family_history`), 생리학적 수치(`Bmi`, `Systolic_BP`,`Triglycerides`), 생활 환경(`Diet_score`, `Physical_activity`) 비선형적 결합되어 발생
+    - 대응 : 변수 간 단순 선형 관계를 넘어, 고차원 알고리즘 적용이 필수적
 - **분석 방향**
     + 통계분석 : 다중회귀, 분산분석, 로지스틱회귀
     + 머신러닝 : 로지스틱회귀, 결정트리, XGBoost, LightBGM
