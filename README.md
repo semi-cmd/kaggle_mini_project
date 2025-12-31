@@ -14,7 +14,7 @@
 - **데이터셋** : [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/data)
 
 - **핵심 목표** : `Diabetes Health Indicators Dataset`을 바탕으로 사용자의 생활습관 및 신체 상태 데이터를 분석하여 
-g설문 기반의 **당뇨병 고위험군 선별 예측 모델**을 구축하는 것을 목표
+설문 기반의 **당뇨병 고위험군 선별 예측 모델**을 구축하는 것을 목표
 
 ## 2. Data Dictionary (주요 핵심 변수)
 - 실제 분석 결과 통해 확보한 변수들의 내용 기재
