@@ -9,6 +9,9 @@
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![XGBoost](https://img.shields.io/badge/XGBoost-0.91_AUC-orange.svg)
 ![Stats](https://img.shields.io/badge/Statistics-Regression%20%26%20ANOVA-green.svg)
+![LightGBM](https://img.shields.io/badge/LightGBM-0.90_AUC-yellow.svg)
+![Stats](https://img.shields.io/badge/Statistics-Logit%20%26%20Tests-green.svg)
+![EDA](https://img.shields.io/badge/EDA-Visualization-red.svg)
 
 # 프로젝트 주제 : 머신러닝 기반 당뇨병 진단 예측 모델
 - 데이터를 기반으로 생활 습관, 건강 지표 확인용... (프로젝트 전체 요약, executive summary)
