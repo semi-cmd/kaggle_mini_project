@@ -7,11 +7,10 @@
 ![EDA](https://img.shields.io/badge/EDA-Visualization-red.svg)
 
 # 프로젝트 주제 : 머신러닝 기반 당뇨병 진단 예측 모델
-- 데이터를 기반으로 생활 습관, 건강 지표 확인용... (프로젝트 전체 요약, executive summary)
 
 ### 🚀 핵심 성과 (Key Highlights)
-- **데이터 분석**: 9개 핵심 변수(Age, BMI, 혈압 등)를 기반으로 한 다각도 통계 검정 수행.
-- **최고 성능 달성**: XGBoost 모델 기반 **AUC-ROC 0.91**, **Recall 0.75** 기록 (상위 10% 수준).
+- **데이터 분석**: 9개 핵심 변수(Age, BMI, 혈압 등)를 기반으로 한 다각도 통계 검정 수행
+- **최고 성능 달성**: XGBoost 모델 기반 **AUC-ROC 0.91**, **Recall 0.75** 기록 (상위 10% 수준)
 - **의사결정 지원**: SHAP 분석을 통해 개별 변수가 당뇨 발생 확률에 기여하는 '설명 가능한(XAI)' 인사이트 도출
 
 ## 1. project overview
@@ -56,7 +55,7 @@
 
 ## 5. 통계분석 핵심 인사이트
 - 혈당이 중요함 : 다른 알려진 요인(나이, BMI)보다 통계적으로 매우 훨씬, 강력하게, 유의미하게 영향이 있음을 확인 (via 회귀분석)
-![Q-Q Plot](output/qqplot.png)
+![Q-Q Plot](output/correlation%20matrix.png)
 
 ## 6. 모델링 평가지표
 - 최종 모델은 XGBoost로 선정
