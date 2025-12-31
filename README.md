@@ -13,14 +13,14 @@
 - **최고 성능 달성**: XGBoost 모델 기반 **AUC-ROC 0.91**, **Recall 0.75** 기록 (상위 10% 수준)
 - **의사결정 지원**: SHAP 분석을 통해 개별 변수가 당뇨 발생 확률에 기여하는 '설명 가능한(XAI)' 인사이트 도출
 
-## 1. project overview
+## ✔️1. project overview
 - **주제** : 생활 습관 또는 신체 상태를 활용한 당뇨병 유무 분류
 - **데이터셋** : [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/data)
 
 - **핵심 목표** : `Diabetes Health Indicators Dataset`을 바탕으로 사용자의 생활습관 및 신체 상태 데이터를 분석하여<br>
 설문 기반의 **당뇨병 고위험군 선별 예측 모델**을 구축하는 것을 목표
 
-## 🎯2. Data Dictionary (주요 핵심 변수)
+## ✔️2. Data Dictionary (주요 핵심 변수)
 - 실제 분석 결과 통해 확보한 변수들의 내용 기재
 - 총 변수갯수 : 31개 中 9개 핵심변수 선정
 
@@ -36,12 +36,11 @@
 | **Family_history** | 직계 가족 중 당뇨병 환자 유무 | 범주형 (Binary) |
 | **Hypertension_history** | 고혈압 진단 및 과거력 유무 | 범주형 (Binary) |
 
- ## 🛠3. Problem Definition
+ ## ✔️3. Problem Definition
  **3.1 데이터 특성 및 분석 과제** <br>
     **비대칭적 클래스 분포**<br>
     - **현상** : 정상군 대비 당뇨 환자군(Target=1)의 비율이 현저히 낮은 불균형 구조를 보임<br>
     - **대응** : 단순 정확도(Accuracy)를 배제, 환자를 놓치지 않는 **재현율(Recall)**과 변별력 측정하는 **AUC-ROC**를 핵심 평가지표로 설정<br>
-    <br>
     <br>
     **복합적 요인성**<br> 
     - **현상** : 당뇨병 유전적(`Family_history`), 생리학적 수치(`Bmi`, `Systolic_BP`,`Triglycerides`), 생활 환경(`Diet_score`, `Physical_activity`) 비선형적 결합되어 발생<br>
@@ -51,18 +50,18 @@
     - **통계분석** : 다중회귀, T-test, 카이제곱 검정, 로지스틱회귀<br>
     - **머신러닝** : 로지스틱회귀, 결정트리, XGBoost, LightBGM<br>
 
-## 4. Data preprocessing
+## ✔️4. Data preprocessing
 - **클래스 불균형 해소** : blah
 - **범주형 변수 처리** 
     + 순서형 : ordinal encoder 처리 (A, B, C)
     + 일반 범주 : One-Hot Encoding 처리
 - **데이터 스케일링** : StandardScaler(표준화)
 
-## 📊5. 통계분석 핵심 인사이트
+## ✔️5. 통계분석 핵심 인사이트
 - 혈당이 중요함 : 다른 알려진 요인(나이, BMI)보다 통계적으로 매우 훨씬, 강력하게, 유의미하게 영향이 있음을 확인 (via 회귀분석)
 ![Q-Q Plot](output/correlation%20matrix.png)
 
-## 6. 모델링 평가지표
+## ✔️6. 모델링 평가지표
 - 최종 모델은 XGBoost로 선정
 
 | Model | Accuracy | Recall | F1-Score | AUC-ROC |
@@ -73,14 +72,14 @@
 > **Note** : 최종 대회 결과는 Public 0.70807 / Private 0.70807 (feat. 1등 점수).
 > **Note** : 최종 대회 결과는 Public 0.70807 / Private 0.70807 (상위 10%).
 
-## 7. Feature Importance (옵션)
+## ✔️7. Feature Importance (옵션)
 - SHAP 활용
 - 예측 모델에서 영향력이 가장 컸던 지표 순위
 1. Age
 2. BMI
 - 그림 추가
 
-## 8. Conclusion
+## ✔️8. Conclusion
 - 결론1
 - 결론2
 - 결론3
