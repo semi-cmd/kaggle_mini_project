@@ -36,18 +36,18 @@
 | **Family_history** | 직계 가족 중 당뇨병 환자 유무 | 범주형 (Binary) |
 | **Hypertension_history** | 고혈압 진단 및 과거력 유무 | 범주형 (Binary) |
 
-## 3. Problem Definition
-** 🛠 3.1 데이터 특성 및 분석 과제** 
+ ## 🛠3. Problem Definition
+ **3.1 데이터 특성 및 분석 과제** 
     **비대칭적 클래스 분포**
-    **현상** : 정상군 대비 당뇨 환자군(Target=1)의 비율이 현저히 낮은 불균형 구조를 보임
-    **대응** : 단순 정확도(Accuracy)를 배제, 환자를 놓치지 않는 **재현율(Recall)**과 변별력 측정하는 **AUC-ROC**를 핵심 평가지표로 설정
+    **현상** : 정상군 대비 당뇨 환자군(Target=1)의 비율이 현저히 낮은 불균형 구조를 보임<br>
+    **대응** : 단순 정확도(Accuracy)를 배제, 환자를 놓치지 않는 **재현율(Recall)**과 변별력 측정하는 **AUC-ROC**를 핵심 평가지표로 설정<br>
     **복합적 요인성** 
-    **현상** : 당뇨병 유전적(`Family_history`), 생리학적 수치(`Bmi`, `Systolic_BP`,`Triglycerides`), 생활 환경(`Diet_score`, `Physical_activity`) 비선형적 결합되어 발생
-    **대응** : 변수 간 단순 선형 관계를 넘어, 고차원 알고리즘 적용이 필수적
+    **현상** : 당뇨병 유전적(`Family_history`), 생리학적 수치(`Bmi`, `Systolic_BP`,`Triglycerides`), 생활 환경(`Diet_score`, `Physical_activity`) 비선형적 결합되어 발생<br>
+    **대응** : 변수 간 단순 선형 관계를 넘어, 고차원 알고리즘 적용이 필수적<br>
 
-** 🛠 3.2 분석 전략 및 방법론**
-    **통계분석** : 다중회귀, T-test, 카이제곱 검정, 로지스틱회귀
-    **머신러닝** : 로지스틱회귀, 결정트리, XGBoost, LightBGM
+ **3.2 분석 전략 및 방법론**
+    **통계분석** : 다중회귀, T-test, 카이제곱 검정, 로지스틱회귀<br>
+    **머신러닝** : 로지스틱회귀, 결정트리, XGBoost, LightBGM<br>
 
 ## 4. Data preprocessing
 - **클래스 불균형 해소** : blah
