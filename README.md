@@ -26,15 +26,15 @@
 
 | 변수명 | 설명 | 변수 유형 |
 | :--- | :--- | :--- |
-| **Age** | 연령대 | 수치형 (Ordinal) |
-| **Diet_score** | 식단 관리 점수 | 수치형 (Continuous) |
-| **Physical_activity** | 신체 활동량 | 수치형 (Continuous) |
-| **Bmi** | 체질량 지수 | 수치형 (Continuous) |
-| **Systolic_BP** | 수축기 혈압 | 수치형 (Continuous) |
-| **Triglycerides** | 중성지방 수치 | 수치형 (Continuous) |
-| **HDL_Cholesterol** | HDL 콜레스테롤 | 수치형 (Continuous) |
-| **Family_history** | 당뇨 가족력 유무 | 범주형 (Binary) |
-| **Hypertension_history** | 고혈압 과거력 | 범주형 (Binary) |
+| **Age** | 사용자의 연령대(13단계 그룹화) | 수치형 (Ordinal) |
+| **Diet_score** | 균형 잡힌 식단 이행 정도 점수 | 수치형 (Continuous) |
+| **Physical_activity** | 주간 신체 활동량 및 운동 강도 | 수치형 (Continuous) |
+| **Bmi** | 체질량 지수($kg/m^2$) | 수치형 (Continuous) |
+| **Systolic_BP** | 수축기 혈압 측정치 | 수치형 (Continuous) |
+| **Triglycerides** | 혈중 중성지방 농도 | 수치형 (Continuous) |
+| **HDL_Cholesterol** | 고밀도 지질단백질(좋은 콜레스테롤) | 수치형 (Continuous) |
+| **Family_history** | 직계 가족 중 당뇨병 환자 유무 | 범주형 (Binary) |
+| **Hypertension_history** | 고혈압 진단 및 과거력 유무 | 범주형 (Binary) |
 
 ## 3. Problem Definition
 - **데이터 특성** 
@@ -53,7 +53,7 @@
     + 일반 범주 : One-Hot Encoding 처리
 - **데이터 스케일링** : StandardScaler(표준화)
 
-## 5. 통계분석 핵심 인사이트
+## 📊5. 통계분석 핵심 인사이트
 - 혈당이 중요함 : 다른 알려진 요인(나이, BMI)보다 통계적으로 매우 훨씬, 강력하게, 유의미하게 영향이 있음을 확인 (via 회귀분석)
 ![Q-Q Plot](output/correlation%20matrix.png)
 
