@@ -1,5 +1,12 @@
-# kaggle_mini_project
-
+<div>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" style="margin-right: 5px;">
+  
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" style="margin-right: 5px;">
+  
+  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" style="margin-right: 5px;">
+  
+  <img src="https://img.shields.io/badge/XGBoost-000000?style=for-the-badge&logo=XGBoost&logoColor=white">
+</div>
 
 
 # 🔗 배지 및 이모지 공식 소스 링크
