@@ -51,10 +51,10 @@
     - **머신러닝** : 로지스틱회귀, 결정트리, XGBoost, LightBGM<br>
 
 ## ✔️4. Data preprocessing
-- **클래스 불균형 해소** : blah
+- **클래스 불균형 해소** : 타겟 변수인 `Diabetes_binary`의 클래스 분포가 비대칭적임을 확인(정상군>>당뇨군)<br>
 - **범주형 변수 처리** 
-    + 순서형 : ordinal encoder 처리 (A, B, C)
-    + 일반 범주 : One-Hot Encoding 처리
+    + 순서형 : ordinal encoder 처리(Age)
+    + 일반 범주 : One-Hot Encoding 처리(Family_history, Hypertension_history)
 - **데이터 스케일링** : StandardScaler(표준화)
 
 ## ✔️5. 통계분석 핵심 인사이트
