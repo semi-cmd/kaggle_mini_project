@@ -32,7 +32,8 @@
 | **Hypertension_history** | 고혈압 과거력 | 범주형 (Binary) |
 
 ## 3. Problem Definition
-- **데이터 특성** : blah
+- **데이터 특성** : 불균형한 클래스 분포 > 정상군에 비해 당뇨군(target)
+의 비율이 낮아 단순 정확도 보다는 **AUC-ROC** + **Recall*을 핵심 평가지표로 설정
 - **분석 방향**
     + 통계분석 : 다중회귀, 분산분석, 로지스틱회귀
     + 머신러닝 : 로지스틱회귀, 결정트리, XGBoost, LightBGM
