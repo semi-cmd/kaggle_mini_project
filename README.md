@@ -1,11 +1,4 @@
 
-<div align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
-  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white">
-  <img src="https://img.shields.io/badge/XGBoost-000000?style=for-the-badge&logo=XGBoost&logoColor=white">
-</div>
-
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 ![XGBoost](https://img.shields.io/badge/XGBoost-0.91_AUC-orange.svg)
 ![Stats](https://img.shields.io/badge/Statistics-Regression%20%26%20ANOVA-green.svg)
