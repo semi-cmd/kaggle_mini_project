@@ -20,6 +20,24 @@
 - 실제 분석 결과 통해 확보한 변수들의 내용 기재
 - 총 변수갯수 : 31개 
 
+## 3. Problem Definition
+- **데이터 특성** : blah
+- **분석 방향**
+    + 통계분석 : 다중회귀, 분산분석, 로지스틱회귀
+    + 머신러닝 : 로지스틱회귀, 결정트리, XGBoost, LightBGM
+
+## 4. Data preprocessing
+- **클래스 불균형 해소** : blah
+- **범주형 변수 처리** 
+    + 순서형 : ordinal encoder 처리 (A, B, C)
+    + 일반 범주 : One-Hot Encoding 처리
+- **데이터 스케일링** : StandardScaler(표준화)
+
+## 5. 통계분석 핵심 인사이트
+- 혈당이 중요함 : 다른 알려진 요인(나이, BMI)보다 통계적으로 매우 훨씬, 강력하게, 유의미하게 영향이 있음을 확인 (via 회귀분석)
+![Q-Q Plot](output/qqplot.png)
+
+
 | 변수명 | 설명 | 값의 의미 |
 | :--- | :--- | :--- |
 | **Diabetes_binary** | 당뇨 여부 (**Target**) | 0: 음성, 1: 당뇨/전단계 |
