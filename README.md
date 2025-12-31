@@ -6,6 +6,8 @@
   <img src="https://img.shields.io/badge/XGBoost-000000?style=for-the-badge&logo=XGBoost&logoColor=white">
 </div>
 
+![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
+
 # 프로젝트 주제 : 머신러닝 기반 당뇨병 진단 예측 모델
 - 데이터를 기반으로 생활 습관, 건강 지표 확인용... (프로젝트 전체 요약, executive summary)
 
