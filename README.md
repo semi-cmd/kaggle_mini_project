@@ -7,6 +7,9 @@
 ![EDA](https://img.shields.io/badge/EDA-Visualization-red.svg)
 
 # 프로젝트 주제 : 머신러닝 기반 당뇨병 진단 예측 모델
+> ![Main Topic](https://img.shields.io/badge/Topic-Diabetes_Prediction-red?style=for-the-badge&logo=target)
+> ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+
 - 데이터를 기반으로 생활 습관, 건강 지표 확인용... (프로젝트 전체 요약, executive summary)
 
 ## 1. project overview
