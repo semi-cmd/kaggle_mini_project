@@ -54,14 +54,14 @@
 ## ✔️4. Data preprocessing
 - **클래스 불균형 해소** : 타겟 변수인 `Diabetes_binary`의 클래스 분포가 비대칭적임을 확인(정상군>>당뇨군)<br>
 - **범주형 변수 처리** 
-    + 순서형 : ordinal encoder 처리(Age)
-    + 일반 범주 : One-Hot Encoding 처리(Family_history, Hypertension_history)
+    + **순서형** : ordinal encoder 처리(Age)
+    + **일반 범주** : One-Hot Encoding 처리(Family_history, Hypertension_history)
 - **데이터 스케일링** : StandardScaler(표준화)
-    + 대상 : `Bmi`, `Systolic_BP`, `Triglycerides`, `HDL_Cholesterol`, `Diet_score`, `Physical_activity`
-    + 필요성 : 특히 **Triglycerides(중성지방)** 과 **Systolic_BP(혈압)** 수치 단위가 커서 모델이 이를 과도하게 인식할 위험이 있음
+    + **대상** : `Bmi`, `Systolic_BP`, `Triglycerides`, `HDL_Cholesterol`, `Diet_score`, `Physical_activity`
+    + **필요성** : 특히 **Triglycerides(중성지방)** 과 **Systolic_BP(혈압)** 수치 단위가 커서 모델이 이를 과도하게 인식할 위험이 있음
 
 ## ✔️5. 통계분석 핵심 인사이트
-- 혈당이 중요함 : 다른 알려진 요인(나이, BMI)보다 통계적으로 매우 훨씬, 강력하게, 유의미하게 영향이 있음을 확인 (via 회귀분석)
+- **혈당이 중요함** : 다른 알려진 요인(나이, BMI)보다 통계적으로 매우 훨씬, 강력하게, 유의미하게 영향이 있음을 확인 (via 회귀분석)
 ![Q-Q Plot](output/correlation%20matrix.png)
 
 ## ✔️5-1. 핵심 변수 비교 분석
