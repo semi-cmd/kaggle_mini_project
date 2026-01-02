@@ -54,7 +54,7 @@
 ## ✔️4. Data preprocessing
 - **클래스 불균형 해소** : 타겟 변수인 `Diabetes_binary`의 클래스 분포가 비대칭적임을 확인(정상군>>당뇨군)<br>
 - **범주형 변수 처리** 
-    + **순서형** : ordinal encoder 처리(Age)
+    + **순서형** : Ordinal encoder 처리(Age)
     + **일반 범주** : One-Hot Encoding 처리(Family_history, Hypertension_history)
 - **데이터 스케일링** : StandardScaler(표준화)
     + **대상** : `Bmi`, `Systolic_BP`, `Triglycerides`, `HDL_Cholesterol`, `Diet_score`, `Physical_activity`
@@ -66,7 +66,7 @@
 
 ## ✔️5-1. 핵심 변수 비교 분석
 - **Triglycerides**가 타 변수 대비 압도적으로 높은 회귀 계수와 낮은  $p-value$($< 0.001$)를 기록함
-- **Triglycerides**와 **HDL_Cholesterol**의 조합이 **Bmi**나 **Systolic_BP**보다 모델의 분류 **성능(AUC)**향상에 더 크게 기여하는 것으로 나타남
+- **Triglycerides**와 **HDL_Cholesterol**의 조합이 **Bmi**나 **Systolic_BP**보다 모델의 분류 **성능(AUC)** 향상에 더 크게 기여하는 것으로 나타남
 
 ## ✔️6. 모델링 평가지표
 - 최종 모델은 XGBoost로 선정
