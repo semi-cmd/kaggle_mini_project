@@ -63,7 +63,7 @@
 ## ✔️5. 통계분석 핵심 인사이트
 - **[BMI] 와 [Age]** 가장 높은 t통계량을 기록 : 해당 요인들이 당뇨 여부를 구분하는 가장 확실한 통계적 지표임을 시사
 - **[Diet_score]와 [Physical_activity]** 오즈비가 1보다 작게 나타나, 해당 수치가 높을수록 당뇨 위험을 낮추는 보호효과가 있음을 통계적으로 증명
-![Q-Q Plot](output/전체데이터 t-test.png)
+![Q-Q Plot](output/correlation%전체데이터 t-test.png)
 
 ## ✔️5-1. 핵심 변수 비교 분석
 - **Triglycerides**가 타 변수 대비 압도적으로 높은 회귀 계수와 낮은  $p-value$($< 0.001$)를 기록함
