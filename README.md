@@ -72,8 +72,11 @@
 ![당뇨 7개 핵심 위험인자 시각화](./output/2개%20변수%20가로막대그래프.png)
 
 ## ✔️5-1. 핵심 변수 비교 분석
-- **Triglycerides**가 타 변수 대비 압도적으로 높은 회귀 계수와 낮은  $p-value$($< 0.001$)를 기록함
-- **Triglycerides**와 **HDL_Cholesterol**의 조합이 **Bmi**나 **Systolic_BP**보다 모델의 분류 **성능(AUC)** 향상에 더 크게 기여하는 것으로 나타남
+- **1. Triglycerides(중성지방)**는 타 변수 대비 압도적으로 높은 **T-stat**과 가장 낮은 **p-value(<0.001)**를 기록하며 당뇨병군과 비당뇨군을 가르는 가장 결정적인 지표로 확인<br>
+- **2.Bmi(체질량지수)** 와 **Age(연령)**는 **Odds Ratio(오즈비)** 측면에서 상위권을 차지했으며, BMI가 1표준편차 증가할 때마다 당뇨 발병 위험이 유의미하게 상승하여, 비만이 직접적인 위험 증폭 임자임을 입증
+- **3. Family History(당뇨가족력)** 와 **Hypertension History(고혈압이력)**는 카이제곱 검정 결과 매우 강력한 상관관계를 보임, 두 변수 모두 **Odds Ratio가 1.0을 크게 상회**하며 기저 질환이 있거나 유전적 소인이 있는 경우 당뇨 발병이 일반군에 비해 높게 나타남
+- **4. Diet_score(식단점수)** 와 **Physical_Activity(신체활동량)**는 **1.0미만의 Odds Ratio**를 기록함, 이는 생활 습관 개선이 당뇨 발병위험을 통계적으로 유의미하게 감소시키는 **보호인자** 역할을 하고 있음을 보여줌
+- **5. 통계적 유의성(T-stat)과 실질적 영향력(OR)을 종합할 때, **[Triglycerides > BMI > Age > Hypertension]** 순을 당뇨병 진단에 기여하는 비중이 높게 나타남
 
 ## ✔️6. 모델링 평가지표
 - 최종 모델은 XGBoost로 선정
@@ -109,22 +112,6 @@
 | **배지 생성** | Shields.io | [https://shields.io/](https://shields.io/) |
 | **로고/색상 검색** | Simple Icons | [https://simpleicons.org/](https://simpleicons.org/) |
 | **이모지 검색** | Emoji Cheat Sheet | [https://github.com/ikatyang/emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet) |
-
-
-
-| 변수명 | 설명 | 값의 의미 |
-| :--- | :--- | :--- |
-| **Diabetes_binary** | 당뇨 여부 (**Target**) | 0: 음성, 1: 당뇨/전단계 |
-| HighBP | 고혈압 여부 | 0: 정상, 1: 고혈압 |
-| HighChol | 고콜레스테롤 여부 | 0: 정상, 1: 높음 |
-| BMI | 체질량 지수 | 수치형 |
-| Smoker | 흡연 여부 | 100개비 이상 흡연 여부 (0/1) |
-| Stroke | 뇌졸중 경험 | 0: 없음, 1: 있음 |
-| HeartDiseaseorAttack | 심장질환/심근경색 | 0: 없음, 1: 있음 |
-| PhysActivity | 신체 활동 | 최근 30일 이내 운동 여부 (0/1) |
-| GenHlth | 주관적 건강 상태 | 1(매우 좋음) ~ 5(매우 나쁨) |
-| Age | 연령대 | 1(18-24) ~ 13(80세 이상) |
-| Income | 소득 수준 | 1(최저) ~ 8(최고) |
 
 
 
