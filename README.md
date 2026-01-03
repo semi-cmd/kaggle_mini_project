@@ -60,11 +60,13 @@
     + **대상** : `Bmi`, `Systolic_BP`, `Triglycerides`, `HDL_Cholesterol`, `Diet_score`, `Physical_activity`
     + **필요성** : 특히 **Triglycerides(중성지방)** 과 **Systolic_BP(혈압)** 수치 단위가 커서 모델이 이를 과도하게 인식할 위험이 있음
 
-## ✔️5. 통계분석 핵심 인사이트
+## ✔️5. 통계분석 핵심 인사이트 (연속형T-test + 범주형Chi-Square)
 - **[BMI] 와 [Age]** 가장 높은 t통계량을 기록 : 해당 요인들이 당뇨 여부를 구분하는 가장 확실한 통계적 지표임을 시사
 - **[Diet_score]와 [Physical_activity]** 오즈비가 1보다 작게 나타나, 해당 수치가 높을수록 당뇨 위험을 낮추는 보호효과가 있음을 통계적으로 증명
 ![당뇨 7개 핵심 위험인자 시각화](./output/7개%20변수%20t-test.png)
 ![당뇨 7개 핵심 위험인자 시각화](./output/7개%20변수%20가로막대그래프.png)
+- **[Family_history] 와 [Hypertension] ** 상관관계 통계적으로 확증함 : 가족력 있는 집단 그렇지 않은 집단에 비해 발병 위험 높게 나타났으며, 이는 유전적요인이 매우 중요한 변수임을 시사
+
 
 ## ✔️5-1. 핵심 변수 비교 분석
 - **Triglycerides**가 타 변수 대비 압도적으로 높은 회귀 계수와 낮은  $p-value$($< 0.001$)를 기록함
