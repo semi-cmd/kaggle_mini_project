@@ -81,11 +81,10 @@
 ## ✔️6. 모델링 평가지표
 - 최종 모델은 LightGBM로 선정
 
-| Model | ACCURACY | RECALL | F1-SCORE | AUC-ROC | 
-| :--- | :--- | :--- | :--- | :--- |  :--- |
-| **Decision Tree** | 0.5856 | 0.6577 | 0.6643 | 0.5620 | 
-| **LightGBM** | 0.6801 | 0.8431 | 0.7667 | 0.7204 | 
-
+| Model | ACCURACY | RECALL | F1-SCORE | AUC-ROC |
+| :--- | :--- | :--- | :--- | :--- |
+| **Decision** | 0.5856 | 0.6577 | 0.6643 | 0.5620 | 
+| **LightGBM** | 0.6801 |0.8431 | 0.7667 | 0.7204 | 
 
 ## ✔️7. Feature Importance (옵션)
 - SHAP 활용
