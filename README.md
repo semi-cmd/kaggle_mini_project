@@ -16,6 +16,7 @@
 ## ✔️1. project overview
 - **주제** : 생활 습관 또는 신체 상태를 활용한 당뇨병 유무 분류
 - **데이터셋** : [Diabetes Health Indicators Dataset](https://www.kaggle.com/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/data)
+- **프로젝트 기간** : 25.12.29~25.12.31
 
 - **핵심 목표** : `Diabetes Health Indicators Dataset`을 바탕으로 사용자의 생활습관 및 신체 상태 데이터를 분석하여<br>
 설문 기반의 **당뇨병 고위험군 선별 예측 모델**을 구축하는 것을 목표
@@ -93,10 +94,10 @@
 ## ✔️7. Feature Importance (옵션)
 - SHAP 활용
 - 예측 모델에서 영향력이 가장 컸던 지표 순위
-1. Family_history_diabetes
-2. Physical_activity_minutes_per_week
-3. Age
 - ![SHAP 활용한 그래프](./output/shap%20중요도.png)
+1. SHAP 분석 결과 Family_history_diabetes가 영향력 1위로 모델이 당뇨병 발생 여부를 판단할 때 환자의 현재 상태보다 유전적 배경을 가장 중요한 기초정보로 활용하고 있음
+2. 신체 활동량이 일정 수준 이상일 경우 당뇨 예측 확률을 강하게 낮추는 효과가 확인되었으므로 운동이 단순한 건강증진을 넘어 당뇨병 발병을 억제하는 실질적 '방어 기제'로 작동하고 있음을 보여줌
+3. age는 시간이 흐름에 따라 신진대사 능력이 저하되고 당뇨 위험이 자연스럽게 누적되는 현상을 보이며 고연령층에서 작은 지표 변화에도 더 민감하게 반응하는 경향울 보임 
 
 ## ✔️8. Conclusion
 - 결론1
