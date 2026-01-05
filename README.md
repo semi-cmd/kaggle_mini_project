@@ -68,7 +68,7 @@
 <br>
 
 - **[Family_history] 와 [Hypertension]** 상관관계 통계적으로 확증함 : 가족력 있는 집단 그렇지 않은 집단에 비해 발병 위험 높게 나타났으며, 이는 유전적요인이 매우 중요한 변수임을 시사
-![당뇨 7개 핵심 위험인자 시각화](./output/2개%20변수%20chi-square.png)
+![당뇨 7개 핵심 위험인자 시각화](./output/데이터.png)
 ![당뇨 7개 핵심 위험인자 시각화](./output/2개%20변수%20가로막대그래프.png)
 
 ## ✔️5-1. 핵심 변수 비교 분석
@@ -89,9 +89,10 @@
 ## ✔️7. Feature Importance (옵션)
 - SHAP 활용
 - 예측 모델에서 영향력이 가장 컸던 지표 순위
-1. Age
-2. BMI
-- 그림 추가
+1. Family_history_diabetes
+2. Physical_activity_minutes_per_week
+3. Age
+- ![SHAP 활용한 그래프](./output/2개%20변수%20가로막대그래프.png)
 
 ## ✔️8. Conclusion
 - 결론1
