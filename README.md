@@ -84,8 +84,11 @@
 
 | Model | ACCURACY | RECALL | F1-SCORE | AUC-ROC |
 | :--- | :--- | :--- | :--- | :--- |
-| **Decision** | 0.5856 | 0.6577 | 0.6643 | 0.5620 | 
+| **Decision tree** | 0.5856 | 0.6577 | 0.6643 | 0.5620 | 
 | **LightGBM** | 0.6801 |0.8431 | 0.7667 | 0.7204 | 
+
+- 모델 성능 비교 평가(Validation)
+![당뇨 7개 핵심 위험인자 시각화](./output/모델%20성능%20비교%20평가.png)
 
 ## ✔️7. Feature Importance (옵션)
 - SHAP 활용
@@ -93,7 +96,7 @@
 1. Family_history_diabetes
 2. Physical_activity_minutes_per_week
 3. Age
-- ![SHAP 활용한 그래프](./output/2개%20변수%20가로막대그래프.png)
+- ![SHAP 활용한 그래프](./output/)
 
 ## ✔️8. Conclusion
 - 결론1
