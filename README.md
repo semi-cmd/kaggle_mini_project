@@ -96,7 +96,7 @@
 1. Family_history_diabetes
 2. Physical_activity_minutes_per_week
 3. Age
-- ![SHAP 활용한 그래프](./output/)
+- ![SHAP 활용한 그래프](./output/shap%20중요도.png)
 
 ## ✔️8. Conclusion
 - 결론1
